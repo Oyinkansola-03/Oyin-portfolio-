@@ -54,6 +54,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg);
+  z-index: 1000;
 }
 header h1 { font-size: 1.5rem; }
 header button { background: none; border: 1px solid var(--border); color: var(--text-primary); padding: 4px 12px; }
@@ -95,7 +99,7 @@ button[type="submit"] { cursor: pointer; padding: 12px 24px; background: var(--a
   nav ul { flex-direction: row; }
 }
 @media (max-width: 768px) {
-  header { padding-top: calc(calc(var(--spacing-unit) * 3) + env(safe-area-inset-top, 0px)); }
+  header { padding-top: calc(calc(var(--spacing-unit) * 3) + env(safe-area-inset-top, 0px)); top: env(safe-area-inset-top, 0px); }
   #about .content { grid-template-columns: 1fr; }
   #home h2 { font-size: 3rem; }
   nav ul { flex-direction: column; gap: var(--gutter); align-items: center; }
