@@ -58,7 +58,7 @@ header {
 header h1 { font-size: 1.5rem; }
 header button { background: none; border: 1px solid var(--border); color: var(--text-primary); padding: 4px 12px; }
 
-nav#main-nav { position: absolute; top: 100%; left: 0; width: 100%; background: var(--surface); padding: var(--gutter); display: none; z-index: 100; }
+nav#main-nav { position: fixed; top: calc(calc(var(--spacing-unit) * 6) + 40px + env(safe-area-inset-top, 0px)); left: 0; width: 100%; height: 100vh; background: var(--surface); padding: var(--gutter); display: none; z-index: 100; }
 nav#main-nav.active { display: block; }
 nav ul { display: flex; list-style: none; gap: var(--gutter); }
 nav a { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-secondary); }
