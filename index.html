@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oyinkansola | AI Animation & Visual Storytelling</title>
+    <meta name="description" content="Personal portfolio for Oyinkansola, specializing in AI Animation & Visual Storytelling." />
+    <meta property="og:title" content="Oyinkansola | AI Animation & Visual Storytelling" />
+    <meta property="og:description" content="Personal portfolio for Oyinkansola, specializing in AI Animation & Visual Storytelling." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Oyinkansola</h1>
+      <button id="menu-toggle">Menu</button>
+      <button id="theme-toggle">Toggle Theme</button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Oyinkansola</h2>
+        <p><strong>AI Animation & Visual Storytelling</strong></p>
+        <p>Developing visual concepts and transforming ideas into stories through AI-driven animation and creative direction.</p>
+        <a href="#projects">View Selected Work</a>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <div class="content">
+          <p>I work at the intersection of AI, animation, visual storytelling, and creative direction. My process is centered on using AI as a tool to enhance, rather than replace, creative thinking.</p>
+          <p>I develop concepts, direct visuals, generate scenes, and edit them into cohesive stories. I am continuously refining my skills in motion, storytelling, and visual production.</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Capabilities</h2>
+        <ul>
+          <li>01 — AI Animation</li>
+          <li>02 — Visual Storytelling</li>
+          <li>03 — Creative Direction</li>
+          <li>04 — Prompt Design</li>
+          <li>05 — Motion Graphics</li>
+          <li>06 — Video Editing</li>
+          <li>07 — Brand & Product Video</li>
+          <li>08 — UGC-style AI Content</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Work</h2>
+        <article>
+          <h3>Digital Jumi</h3>
+          <p class="project-meta">AI Animation · Visual Storytelling</p>
+          <p>Turning a static VA community flyer into an audience-focused animated story. Creative approach: turning information into a relatable question: “After learning, how do I get the experience?”</p>
+          <button class="view-project-btn" data-project="digital-jumi">View Project</button>
+        </article>
+        <article>
+          <h3>VA Simulation Animation</h3>
+          <p class="project-meta">Animation · Simulation</p>
+          <p>An animation created to explore the concept of simulation-based learning and practical experience.</p>
+          <button class="view-project-btn" data-project="va-simulation">View Project</button>
+        </article>
+        <article>
+          <h3>Marlowe Video</h3>
+          <p class="project-meta">AI Concept</p>
+          <p>An AI operating system concept developed for travel professionals. <em>[Media pending]</em></p>
+          <button class="view-project-btn" data-project="marlowe-video">View Project</button>
+        </article>
+        <article>
+          <h3>Experiments / Showreel</h3>
+          <p class="project-meta">Various</p>
+          <p>A collection of experiments in animation, visual storytelling, motion, and UGC-style brand content.</p>
+          <button class="view-project-btn" data-project="experiments">View Project</button>
+        </article>
+      </section>
+
+      <!-- Modal Structure -->
+      <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-body">
+        <div class="modal-content">
+          <button id="close-modal" aria-label="Close modal">&times;</button>
+          <div id="modal-body" class="modal-body"></div>
+        </div>
+      </div>
+
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>Available upon request or via download.</p>
+        <a href="resume.pdf" download>Download Resume</a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Interested in collaborating on animation, visual storytelling, or creative video projects?</p>
+        <div id="form-feedback"></div>
+        <form id="contact-form" action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message (Animation/Creative Inquiries):</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <button id="scroll-to-top">Top</button>
+
+    <footer>
+      <p>&copy; 2026 Oyinkansola</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
